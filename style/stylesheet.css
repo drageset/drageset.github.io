@@ -14,6 +14,20 @@ header {
 	justify-content: space-between;
 }
 
+hr {
+	width: 90%;
+}
+
+#hamburger-nav {
+	top: 80px;
+	right: 0;
+	background-color: #F8F8F8;
+}
+
+#hamburger-nav a {
+	width: 100%;
+}
+
 nav div {
 	margin: 10px;
 }
@@ -24,10 +38,14 @@ nav a:link, nav a:visited {
 }
 
 main {
-	padding: 20px 50px 50px 50px;
+	padding: 15px 30px 30px 30px;
 	min-height: 80%;
 	background-color: #313131;
 	color: #F8F8F8;
+}
+
+.text-wrapper {
+	margin: 0 10px 0 10px;
 }
 
 footer {
@@ -56,19 +74,30 @@ footer {
 	font-size: 1.2em;
 }
 
-.square-button {
+.square-button, .mobile-nav-button {
 	transition: width 0.1s, height 0.1s, opacity 0.2s;
-	width: 80px;
 	height: 49px;
 	border: 1px solid #313131;
+}
+
+.square-button {
+	width: 80px;
+}
+
+
+.mobile-nav-button {
+	width: 100%;
+}
+
+.square-button:hover, .mobile-nav-button:hover {
+	background-color: #313131;
+	color: #F8F8F8;
+	box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
 }
 
 .square-button:hover {
 	width: 80px;
 	height: 55px;
-	background-color: #313131;
-	color: #F8F8F8;
-	box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
 }
 
 .box-shadow {
@@ -95,7 +124,7 @@ main .square-button:hover {
 	box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
 }
 
-.hidden {
+.hidden, .hidden * {
 	opacity: 0; /* So that things can fade in if desired */
 	height: 0;	/* So that things can expand in if desired */
 	margin: 0;
@@ -105,7 +134,7 @@ main .square-button:hover {
 .expanding {
 	transition: height 0.3s;
 	background-color: #464646;
-	padding: 1px 30px 1px 30px;
+	padding: 1px 20px 1px 20px;
 	cursor: pointer; cursor: hand; 
 }
 
@@ -121,23 +150,35 @@ main .square-button:hover {
 	margin: 10px;
 }
 
-#home, #about, #resume, #portfolio, #contact {
-	display: none;
-}
-
 #jokePunchline {
 	font-family: 'Luckiest Guy', Impact;
 	font-size: 2em;
 	height: auto !important;
 }
 
+#desktop-nav, #desktop-nav * {
+	display: none;
+}
+
 
 @media only screen and (min-width: 768px) {
-	#home, #about, #resume, #portfolio, #contact {
+	#desktop-nav, #desktop-nav * {
 		display: flex;
 	}
 
 	#nav-icon3 {
 		display: none;
+		opacity: 0;
+		height: 0;	
+		margin: 0;
+		padding: 0;
+	}
+
+	main {
+		padding: 20px 50px 50px 50px;
+	}
+
+	.expanding {
+		padding: 1px 30px 1px 30px;
 	}
 }
