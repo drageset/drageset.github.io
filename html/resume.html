@@ -1,42 +1,38 @@
-/********************
-* 	HTML elements	*
-********************/
-
-const portfolio = `<p>Watch this space!</p>`;
-
-const about = `<p>Watch this space!</p>`;
-
-const contact = `<p>You can reach me at <a href="mailto:olve.drageset@gmail.com">olve.drageset@gmail.com</a>, or <a href="https://www.linkedin.com/in/olvedrageset/">find me on linkedIn</a></p>`;
-
-const joke = `<div id="joke" class="flex-vertical-centered">
-			<p class="typing typing-0"></p>
-			<p class="typing typing-1"></p>
-			<br>
-			<div id="alternatives" class="flex-centered">
-				<div id="yes" class="square-button flex-centered glowing hidden">Sure!</div>
-				<div id="no" class="square-button flex-centered glowing hidden">Nah</div>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Resume</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu+Mono|Luckiest+Guy" rel="stylesheet">
+	<script src="scripts/elements.js"></script>
+</head>
+<body>
+	<header class="flex">
+		<div id="name" class="flex-centered">
+			<div id="olve" class="flex-vertical-centered">
+				<span>O L</span>
+				<span>V E</span>
 			</div>
-			<br>
-			<p id="jokeOrNoJoke" class="hidden typing typing-2"></p>
-			<p id="jokePunchline" class="hidden"><span>Ba</span><span>dum</span> <span>tssssh!</span></p>
-		</div>`;
 
-const jokeLoaded = `<div id="joke" class="flex-vertical-centered">
-			<p class="typing typing-0">Hi there!</p>
-			<p class="typing typing-1">Wanna hear a joke?</p>
-			<br>
-			<div id="alternatives" class="flex-centered">
-				<div id="yes" class="square-button flex-centered glowing">Sure!</div>
-				<div id="no" class="square-button flex-centered glowing">Nah</div>
+			<h1 id="drageset">drageset</h1>
+		</div>
+		<nav class="flex-centered">
+			<div id="nav-icon3">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
 			</div>
-			<br>
-			<p id="jokeOrNoJoke" class="hidden typing typing-2"></p>
-			<p id="jokePunchline" class="hidden"><span>Ba</span><span>dum</span> <span>tssssh!</span></p>
-		</div>`;
-
-const jokeText = ["Hi there!","Wanna hear a joke?","Two drums and a cymbal fell off a cliff...","Well, then the joke's on you! (sorry, not sorry)"];
-
-const resume = `
+			<div id="home" class="square-button flex-centered">home</div>
+			<div id="about" class="square-button flex-centered">about</div>
+			<div id="resume" class="square-button flex-centered">resume</div>
+			<div id="portfolio" class="square-button flex-centered">portfolio</div>
+			<div id="contact" class="square-button flex-centered">contact</div>
+		</nav>
+	</header>
+	<main id="main" class="flex-vertical-centered">
 		<h1>Technologies (I like to work with)</h1>
 		<div class="expanding">
 			<h3>Languages</h2>
@@ -141,5 +137,11 @@ const resume = `
 		</div>
 		
 		<div><h1>Voulenteer Experience</h1></div>
-		
-		`;
+	</main>
+	<footer class="flex-vertical-centered">
+		This is a footer
+	</footer>
+	
+	<script src="scripts/script.js"></script>
+</body>
+</html>

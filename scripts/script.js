@@ -34,6 +34,12 @@ var portfolioButton = document.getElementById('portfolio');
 portfolioButton.addEventListener('click', loadPortfolio);
 var contactButton = document.getElementById('contact')
 contactButton.addEventListener('click', loadContact);
+var hamburger = document.getElementById('nav-icon3');
+var hamMenu = document.getElementById('ham-menu');
+hamburger.addEventListener('click', function(e) {
+	hamburger.classList.toggle("open");
+	hamMenu.classList.toggle("hidden");
+});
 
 //Joke buildup
 var typingDelay = 50; //ms delay between each stroke
@@ -45,11 +51,21 @@ function type() {
 	typer.typeText();
 }
 
+function toggleClass(element, className){
+	var oldClassName = element.className;
+	var index = oldClassName.indexOf(className);
+	if (index >= 0) {
+		element.className = oldClassName.substring(0, index) + oldClassName.substring(index+className.length+1, oldClassName.length);
+	} else {
+		element.className = oldClassName + " " + className;
+	}
+}
+
 function unHide(element) {
 	var oldClassName = element.className;
 	var index = oldClassName.indexOf('hidden');
 	if (index >= 0) {
-		element.className = oldClassName.substring(0, index) + oldClassName.substring(index+7, oldClassName.length);
+		element.toggle.classList('hidden');
 	}
 }
 
@@ -57,7 +73,7 @@ function hide(element) {
 	var oldClassName = element.className;
 	var index = oldClassName.indexOf('hidden');
 	if (!(index >= 0)) {
-		element.className = oldClassName + " hidden";
+		element.toggle.classList('hidden');
 	}
 }
 

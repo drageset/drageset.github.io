@@ -120,10 +120,6 @@ main .square-button:hover {
 	display: none;
 }
 
-#nav-toggle {
-	align-self: center;
-}
-
 #jokePunchline {
 	font-family: 'Luckiest Guy', Impact;
 	font-size: 2em;
@@ -131,29 +127,12 @@ main .square-button:hover {
 }
 
 
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 5px;
-  width: 35px;
-  background: #313131;
-  position: absolute;
-  content: '';
-}
-#nav-toggle span:before {
-  top: -10px;
-}
-#nav-toggle span:after {
-  bottom: -10px; 
-}
-
 @media only screen and (min-width: 768px) {
-#home, #about, #resume, #portfolio, #contact {
-	display: flex;
-}
+	#home, #about, #resume, #portfolio, #contact {
+		display: flex;
+	}
 
-#nav-toggle {
-	display: none;
-}
-
+	#nav-icon3 {
+		display: none;
+	}
 }
