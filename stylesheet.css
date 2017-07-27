@@ -1,0 +1,173 @@
+body {
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+a:link, a:visited {
+	color: #B5B3B1;
+}
+
+header {
+	padding: 20px;
+	height: 80px;
+	background-color: #F8F8F8;
+	justify-content: space-between;
+}
+
+nav div {
+	margin: 10px;
+}
+
+main {
+	padding: 20px 50px 50px 50px;
+	min-height: 80%;
+	background-color: #313131;
+	color: #F8F8F8;
+}
+
+footer {
+	padding: 40px;
+}
+
+*[class*="flex"] {
+	display: flex;
+}
+
+*[class*="-vertical"] {
+	flex-direction: column;
+}
+
+*[class*="-centered"] {
+	align-items: center;
+	justify-content: center;
+}
+
+*[class*="-button"]:hover {
+	cursor: pointer; cursor: hand; 
+}
+
+.typing {
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 1.2em;
+}
+
+.square-button {
+	transition: width 0.1s, height 0.1s, opacity 0.2s;
+	width: 80px;
+	height: 49px;
+	border: 1px solid #313131;
+}
+
+.square-button:hover {
+	width: 80px;
+	height: 55px;
+	background-color: #313131;
+	color: #F8F8F8;
+	box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
+}
+
+.box-shadow {
+	box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
+}
+
+main .square-button {
+	margin: 0 10px 0 10px;
+	border: 1px solid #F8F8F8;
+}
+
+main .square-button:hover {
+	background-color: #F8F8F8;
+	color: #313131;
+	width: 85px;
+	height: 49px;
+	box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
+	cursor: pointer; cursor: hand; 
+}
+
+.clicked {
+	background-color: #313131;
+	color: #F8F8F8;
+	box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
+}
+
+.hidden {
+	opacity: 0; /* So that things can fade in if desired */
+	height: 0;	/* So that things can expand in if desired */
+	margin: 0;
+	padding: 0;
+}
+
+.expanding {
+	transition: height 0.3s;
+	background-color: #464646;
+	padding: 1px 30px 1px 30px;
+	cursor: pointer; cursor: hand; 
+}
+
+#olve {
+	color: #F8F8F8;
+	background-color: #313131;
+	width: 45px;
+	height: 45px;
+	margin: 0 10px 0 10px;
+}
+
+#drageset {
+	margin: 10px;
+}
+
+#home, #about, #resume, #portfolio, #contact {
+	display: none;
+}
+
+#nav-toggle {
+	align-self: center;
+}
+
+#punchlineButton {
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	background-color: red;
+	font-family: Impact;
+	box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
+}
+
+#punchlineButton:hover {
+	box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.9);
+	height: 100px;
+	width: 102px;
+}
+
+#jokePunchline {
+	font-family: 'Luckiest Guy', Impact;
+	font-size: 2em;
+}
+
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #313131;
+  position: absolute;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px; 
+}
+
+@media only screen and (min-width: 768px) {
+#home, #about, #resume, #portfolio, #contact {
+	display: flex;
+}
+
+#nav-toggle {
+	display: none;
+}
+
+}
