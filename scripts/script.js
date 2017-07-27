@@ -1,9 +1,11 @@
 //The typewriter types out text slowly to a given html element. 
 //There should only be one TypeWriter existing at any given time in order to work as intended.
+
 class TypeWriter {
-	constructor(text, htmlElement){
+	constructor(text, htmlElement, typingDelay){
 		this.text = text;
 		this.htmlElement = htmlElement;
+		this.typingDelay = typingDelay;
 		this.typingIndex = 0;
 	}
 
@@ -11,7 +13,7 @@ class TypeWriter {
 		if (this.typingIndex < this.text.length) {
 			this.htmlElement.innerHTML += this.text.charAt(this.typingIndex);
 			this.typingIndex++;
-			setTimeout( 'type()', 80 ); //100ms between each 'keystroke'. The global function type() is used, as instance specific methods dont work with setTimeout
+			setTimeout( 'type()', typingDelay ); // The global function type() is used, as instance specific methods dont work with setTimeout
 		} else {
 			return true;
 		}
@@ -34,7 +36,8 @@ var contactButton = document.getElementById('contact')
 contactButton.addEventListener('click', loadContact);
 
 //Joke buildup
-typer = new TypeWriter("Test", document.getElementById('main')); //'typer' is the single handle for the typewriter.
+var typingDelay = 50; //ms delay between each stroke
+typer = new TypeWriter("Test", document.getElementById('main'), typingDelay); //'typer' is the single handle for the typewriter.
 loadLanding();
 
 // This method is used my the typewriter to continue typing. use typer.typeText() to start the typing process.
@@ -50,16 +53,24 @@ function unHide(element) {
 	}
 }
 
+function hide(element) {
+	var oldClassName = element.className;
+	var index = oldClassName.indexOf('hidden');
+	if (!(index >= 0)) {
+		element.className = oldClassName + " hidden";
+	}
+}
+
 function runJoke() {
 	typer = new TypeWriter(jokeText[0], document.querySelector(".typing-0"));
 	typer.typeText();
-	setTimeout ( line2, 1300 );
+	setTimeout ( line2, jokeText[0].length * typingDelay + typingDelay );
 }
 
 function line2() {
 	typer = new TypeWriter(jokeText[1], document.querySelector('.typing-1'));
 	typer.typeText();
-	setTimeout ( displayAlternatives, 2250 );
+	setTimeout ( displayAlternatives, jokeText[1].length * typingDelay + typingDelay );
 }
 
 function displayAlternatives() {
@@ -72,17 +83,13 @@ function displayAlternatives() {
 }
 
 function tellMeJoke() {
+	hide(document.getElementById('jokePunchline'));
 	var jokeOrNoJoke = document.querySelector(".typing-2");
 	unHide(jokeOrNoJoke);
 	jokeOrNoJoke.innerHTML = '';
 	typer = new TypeWriter(jokeText[2], jokeOrNoJoke);
 	typer.typeText();
-	setTimeout ( deliverPunchline, 4000 );
-}
-
-function prepPunchline() {
-	unHide(document.getElementById('punchlineButton'));
-	//TODO: Add event listener to puncline button
+	setTimeout ( deliverPunchline, 3500 );
 }
 
 function deliverPunchline() {
@@ -90,6 +97,7 @@ function deliverPunchline() {
 }
 
 function noJoke() {
+	hide(document.getElementById('jokePunchline'));
 	var jokeOrNoJoke = document.querySelector(".typing-2");
 	unHide(jokeOrNoJoke);
 	jokeOrNoJoke.innerHTML = '';
@@ -141,9 +149,6 @@ function loadLanding() {
 	tellMeJokeButton.addEventListener('click', tellMeJoke);
 	var noJokeButton = document.getElementById('no');
 	noJokeButton.addEventListener('click', noJoke);
-
-	var punchlineButton = document.getElementById('punchlineButton');
-	punchlineButton.addEventListener('click', deliverPunchline);
 
 	runJoke();
 }

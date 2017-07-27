@@ -124,24 +124,10 @@ main .square-button:hover {
 	align-self: center;
 }
 
-#punchlineButton {
-	height: 100px;
-	width: 100px;
-	border-radius: 50px;
-	background-color: red;
-	font-family: Impact;
-	box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
-}
-
-#punchlineButton:hover {
-	box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.9);
-	height: 100px;
-	width: 102px;
-}
-
 #jokePunchline {
 	font-family: 'Luckiest Guy', Impact;
 	font-size: 2em;
+	height: auto !important;
 }
 
 

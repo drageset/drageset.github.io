@@ -2,11 +2,11 @@
 * 	HTML elements	*
 ********************/
 
-const portfolio = `Under construction`;
+const portfolio = `<p>Watch this space!</p>`;
 
-const about = `Under construction`;
+const about = `<p>Watch this space!</p>`;
 
-const contact = `<p>You can reach me at <a href="mailto:olve@drageset.net">olve@drageset.net</a>, or <a href="https://www.linkedin.com/in/olvedrageset/">find me on linkedIn</a></p>`;
+const contact = `<p>You can reach me at <a href="mailto:olve.drageset@gmail.com">olve.drageset@gmail.com</a>, or <a href="https://www.linkedin.com/in/olvedrageset/">find me on linkedIn</a></p>`;
 
 const joke = `<div id="joke" class="flex-vertical-centered">
 			<p class="typing typing-0"></p>
@@ -18,7 +18,6 @@ const joke = `<div id="joke" class="flex-vertical-centered">
 			</div>
 			<br>
 			<p id="jokeOrNoJoke" class="hidden typing typing-2"></p>
-			<div class="hidden flex-centered round-button" id="punchlineButton"><p>PUNCHLINE</p></div>
 			<p id="jokePunchline" class="hidden"><span>Ba</span><span>dum</span> <span>tssssh!</span></p>
 		</div>`;
 
@@ -32,13 +31,74 @@ const jokeLoaded = `<div id="joke" class="flex-vertical-centered">
 			</div>
 			<br>
 			<p id="jokeOrNoJoke" class="hidden typing typing-2"></p>
-			<div class="hidden flex-centered round-button" id="punchlineButton"><p>PUNCHLINE</p></div>
-			<p id="jokePunchline" class="hidden"><span class="hidden">Ba</span><span class="hidden">dum</span> <span class="hidden">tssssh!</span></p>
+			<p id="jokePunchline" class="hidden"><span>Ba</span><span>dum</span> <span>tssssh!</span></p>
 		</div>`;
 
 const jokeText = ["Hi there!","Wanna hear a joke?","Two drums and a cymbal fell off a cliff...","Well, then the joke's on you! (sorry, not sorry)"];
 
-const resume = `<h1>Education</h1>
+const resume = `
+		<h1>Technologies (I like to work with)</h1>
+		<div class="expanding">
+			<p>Programming languages, dbs and other Technologies I know and like <p>
+			<h3>Languages</h2>
+			<ul>
+				<li>Java</li>
+				<li>JavaScript</li>
+				<li>Python 3</li>
+				<li>Prolog</li>
+				<li>C# (Mono)</li>
+			</ul>
+
+			<h3>Database Technologies</h2>
+			<ul>
+				<li>MySQL</li>
+				<li>SPARQL and Apache Jena TDB</li>
+				<li>SQLite</li>
+				<li>MongoDB</li>
+			</ul>
+
+			<h3>Web Technologies</h2>
+			<ul>
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>JavaScript</li>
+				<li>JSON</li>
+				<li>Semantic Annotation with JSON-LD or RDFa</li>
+			</ul>
+
+			<h3>Other</h2>
+			<ul>
+				<li>Semantic Web technologies (RDF, RDF-S and OWL2)</li>
+				<li>GIT version controll</li>
+				<li>Unit testing</li>
+			</ul>
+
+			<h3>Development Environments</h2>
+			<ul>
+				<li>Jetbrains IntelliJ</li>
+				<li>Sublime Text 3</li>
+				<li>Android Studio</li>
+				<li>Eclipse</li>
+				<li>Unity 5</li>
+			</ul>
+		</div>
+		
+		<h1>Skills and profficiencies</h1>
+		<div class="expanding">
+			<h3>Development Skills</h3>
+			<ul>
+				<li>Algorithms and Datastructures</li>
+				<li>Ontology Engineering</li>
+				<li>Responsive Web Design</li>
+				<li>Design Patterns</li>
+				<li>Unity 2D game development</li>
+				<li>Android Development</li>
+			</ul>
+
+			<p>Project management, algos, datastructures, logic etc?<p>
+		</div>
+
+		<h1>Education</h1>
 		<div class="expanding">
 			<h3>University of Bergen (UiB)</h2>
 			<ul>
@@ -83,6 +143,4 @@ const resume = `<h1>Education</h1>
 		
 		<div><h1>Voulenteer Experience</h1></div>
 		
-		<div><h1>Languages</h1></div>
-		
-		<div><h1>Skills and profficiencies</h1></div>`;
+		`;
