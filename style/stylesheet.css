@@ -165,6 +165,9 @@ main .square-button:hover {
 	#desktop-nav, #desktop-nav * {
 		display: flex;
 	}
+	#desktop-nav {
+		padding: 5px;
+	}
 
 	#nav-icon3 {
 		display: none;
