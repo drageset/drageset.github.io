@@ -2,11 +2,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Resume</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	
+	<link rel="stylesheet" type="text/css" href="../style/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="../style/hamburger.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu+Mono|Luckiest+Guy" rel="stylesheet">
-	<script src="scripts/elements.js"></script>
 </head>
 <body>
 	<header class="flex">
@@ -25,14 +24,14 @@
 			  <span></span>
 			  <span></span>
 			</div>
-			<div id="home" class="square-button flex-centered">home</div>
-			<div id="about" class="square-button flex-centered">about</div>
-			<div id="resume" class="square-button flex-centered">resume</div>
-			<div id="portfolio" class="square-button flex-centered">portfolio</div>
-			<div id="contact" class="square-button flex-centered">contact</div>
+			<a class="flex-centered" href="../index.html"><div id="home" class="square-button flex-centered">home</div></a>
+			<a class="flex-centered" href="about.html"><div id="about" class="square-button flex-centered">about</div></a>
+			<a class="flex-centered" href="#"><div id="resume" class="square-button flex-centered clicked">resume</div></a>
+			<a class="flex-centered" href="portfolio.html"><div id="portfolio" class="square-button flex-centered">portfolio</div></a>
+			<a class="flex-centered" href="contact.html"><div id="contact" class="square-button flex-centered">contact</div></a>
 		</nav>
 	</header>
-	<main id="main" class="flex-vertical-centered">
+	<main id="main">
 		<h1>Technologies (I like to work with)</h1>
 		<div class="expanding">
 			<h3>Languages</h2>
@@ -47,7 +46,7 @@
 			<h3>Database Technologies</h2>
 			<ul>
 				<li>MySQL</li>
-				<li>SPARQL and Apache Jena TDB</li>
+				<li><a href="https://github.com/drageset/ptw-project" target="ptw-repo">SPARQL and Apache Jena TDB</a></li>
 				<li>SQLite</li>
 				<li>MongoDB</li>
 			</ul>
@@ -63,7 +62,7 @@
 
 			<h3>Other</h2>
 			<ul>
-				<li>Semantic Web technologies (RDF, RDF-S and OWL2)</li>
+				<li> <a href="https://github.com/drageset/ptw-project" target="ptw-repo"></a>Semantic Web technologies (RDF, RDF-S and OWL2)</li>
 				<li>GIT version controll</li>
 				<li>Unit testing</li>
 			</ul>
@@ -82,11 +81,12 @@
 		<div class="expanding">
 			<h3>Development Skills</h3>
 			<ul>
-				<li>Algorithms and Datastructures</li>
-				<li>Ontology Engineering</li>
-				<li>Responsive Web Design</li>
+				<li><a href="#" target="algo-repo">Algorithms</a> and <a href="#" target="ds-repo">Datastructures</a></li>
+				<li><a href="#">Ontology Engineering</a></li>
+				<li>Responsive Web Design (Check this site out on mobile!)</li>
 				<li>Design Patterns</li>
-				<li>Unity 2D game development</li>
+				<li>Kanban</li>
+				<li><a href="#">Unity 2D game development</a></li>
 				<li>Android Development</li>
 			</ul>
 
@@ -141,7 +141,5 @@
 	<footer class="flex-vertical-centered">
 		This is a footer
 	</footer>
-	
-	<script src="scripts/script.js"></script>
 </body>
 </html>
