@@ -37,6 +37,8 @@ tellMeJokeButton.addEventListener('click', tellMeJoke);
 var noJokeButton = document.getElementById('no');
 noJokeButton.addEventListener('click', noJoke);
 
+const jokeText = ["Hi there!","Wanna hear a joke?","Two drums and a cymbal fell off a cliff...","Well, then the joke's on you! (sorry, not sorry)"];
+
 runJoke();
 
 // This method is used my the typewriter to continue typing. use typer.typeText() to start the typing process.
