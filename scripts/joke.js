@@ -54,13 +54,13 @@ function hide(element) {
 }
 
 function runJoke() {
-	typer = new TypeWriter(jokeText[0], document.querySelector(".typing-0"));
+	typer = new TypeWriter(jokeText[0], document.querySelector(".typing-0"), typingDelay);
 	typer.typeText();
 	setTimeout ( line2, jokeText[0].length * typingDelay + typingDelay );
 }
 
 function line2() {
-	typer = new TypeWriter(jokeText[1], document.querySelector('.typing-1'));
+	typer = new TypeWriter(jokeText[1], document.querySelector('.typing-1'), typingDelay);
 	typer.typeText();
 	setTimeout ( displayAlternatives, jokeText[1].length * typingDelay + typingDelay );
 }
