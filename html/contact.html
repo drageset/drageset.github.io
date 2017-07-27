@@ -2,11 +2,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Contact</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	
+	<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="../hamburger.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu+Mono|Luckiest+Guy" rel="stylesheet">
-	<script src="scripts/elements.js"></script>
+	<script src="../scripts/elements.js"></script>
 </head>
 <body>
 	<header class="flex">
@@ -25,11 +25,11 @@
 			  <span></span>
 			  <span></span>
 			</div>
-			<div id="home" class="square-button flex-centered">home</div>
-			<div id="about" class="square-button flex-centered">about</div>
-			<div id="resume" class="square-button flex-centered">resume</div>
-			<div id="portfolio" class="square-button flex-centered">portfolio</div>
-			<div id="contact" class="square-button flex-centered">contact</div>
+			<a class="flex-centered" href="../index.html"><div id="home" class="square-button flex-centered">home</div></a>
+			<a class="flex-centered" href="about.html"><div id="about" class="square-button flex-centered">about</div></a>
+			<a class="flex-centered" href="resume.html"><div id="resume" class="square-button flex-centered">resume</div></a>
+			<a class="flex-centered" href="portfolio.html"><div id="portfolio" class="square-button flex-centered">portfolio</div></a>
+			<a class="flex-centered" href="#"><div id="contact" class="square-button flex-centered clicked">contact</div></a>
 		</nav>
 	</header>
 	<main id="main" class="flex-vertical-centered">
@@ -38,7 +38,5 @@
 	<footer class="flex-vertical-centered">
 		This is a footer
 	</footer>
-	
-	<script src="scripts/script.js"></script>
 </body>
 </html>

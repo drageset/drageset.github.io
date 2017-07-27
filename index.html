@@ -25,15 +25,26 @@
 			  <span></span>
 			  <span></span>
 			</div>
-			<div id="home" class="square-button flex-centered">home</div>
-			<div id="about" class="square-button flex-centered">about</div>
-			<div id="resume" class="square-button flex-centered">resume</div>
-			<div id="portfolio" class="square-button flex-centered">portfolio</div>
-			<div id="contact" class="square-button flex-centered">contact</div>
+			<a class="flex-centered" href="#"><div id="home" class="square-button flex-centered clicked">home</div></a>
+			<a class="flex-centered" href="html/about.html"><div id="about" class="square-button flex-centered">about</div></a>
+			<a class="flex-centered" href="html/resume.html"><div id="resume" class="square-button flex-centered">resume</div></a>
+			<a class="flex-centered" href="html/portfolio.html"><div id="portfolio" class="square-button flex-centered">portfolio</div></a>
+			<a class="flex-centered" href="html/contact.html"><div id="contact" class="square-button flex-centered">contact</div></a>
 		</nav>
 	</header>
 	<main id="main" class="flex-vertical-centered">
-
+		<div id="joke" class="flex-vertical-centered">
+			<p class="typing typing-0"></p>
+			<p class="typing typing-1"></p>
+			<br>
+			<div id="alternatives" class="flex-centered">
+				<div id="yes" class="square-button flex-centered glowing hidden">Sure!</div>
+				<div id="no" class="square-button flex-centered glowing hidden">Nah</div>
+			</div>
+			<br>
+			<p id="jokeOrNoJoke" class="hidden typing typing-2"></p>
+			<p id="jokePunchline" class="hidden"><span>Ba</span><span>dum</span> <span>tssssh!</span></p>
+		</div>
 	</main>
 	<footer class="flex-vertical-centered">
 		This is a footer

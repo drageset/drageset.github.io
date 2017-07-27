@@ -21,19 +21,7 @@ class TypeWriter {
 }
 
 //Make the NAV bar functional
-var main = document.getElementById('main');
-main.innerHTML = joke;
-var homeButton = document.getElementById('home');
-homeButton.addEventListener('click', loadHome);
-homeButton.className += ' clicked';
-var aboutButton = document.getElementById('about');
-aboutButton.addEventListener('click', loadAbout);
-var resumeButton = document.getElementById('resume');
-resumeButton.addEventListener('click', loadResume);
-var portfolioButton = document.getElementById('portfolio');
-portfolioButton.addEventListener('click', loadPortfolio);
-var contactButton = document.getElementById('contact')
-contactButton.addEventListener('click', loadContact);
+
 var hamburger = document.getElementById('nav-icon3');
 var hamMenu = document.getElementById('ham-menu');
 hamburger.addEventListener('click', function(e) {
@@ -44,28 +32,23 @@ hamburger.addEventListener('click', function(e) {
 //Joke buildup
 var typingDelay = 50; //ms delay between each stroke
 typer = new TypeWriter("Test", document.getElementById('main'), typingDelay); //'typer' is the single handle for the typewriter.
-loadLanding();
+var tellMeJokeButton = document.getElementById('yes');
+tellMeJokeButton.addEventListener('click', tellMeJoke);
+var noJokeButton = document.getElementById('no');
+noJokeButton.addEventListener('click', noJoke);
+
+runJoke();
 
 // This method is used my the typewriter to continue typing. use typer.typeText() to start the typing process.
 function type() {
 	typer.typeText();
 }
 
-function toggleClass(element, className){
-	var oldClassName = element.className;
-	var index = oldClassName.indexOf(className);
-	if (index >= 0) {
-		element.className = oldClassName.substring(0, index) + oldClassName.substring(index+className.length+1, oldClassName.length);
-	} else {
-		element.className = oldClassName + " " + className;
-	}
-}
-
 function unHide(element) {
 	var oldClassName = element.className;
 	var index = oldClassName.indexOf('hidden');
 	if (index >= 0) {
-		element.toggle.classList('hidden');
+		element.classList.toggle('hidden');
 	}
 }
 
@@ -73,7 +56,7 @@ function hide(element) {
 	var oldClassName = element.className;
 	var index = oldClassName.indexOf('hidden');
 	if (!(index >= 0)) {
-		element.toggle.classList('hidden');
+		element.classList.toggle('hidden');
 	}
 }
 
@@ -121,90 +104,11 @@ function noJoke() {
 	typer.typeText();
 }
 
-function click(button) {
-	unclick(homeButton);
-	unclick(aboutButton);
-	unclick(resumeButton);
-	unclick(portfolioButton);
-	unclick(contactButton);
-	if (!button.className || !button.className.includes('clicked')) {
-		button.className += ' clicked';
-	}
-}
-
-function unclick(button) {
-	var oldClassName = button.className;
-	var index = oldClassName.indexOf('clicked');
-	if (index > 0) {
-		button.className = oldClassName.substring(0, index) + oldClassName.substring(index+7, oldClassName.length);
-	}
-}
-
-/*
-// Here you can put in the text you want to make it type.
-function type(text, htmlElement, typingIndex)
-{
-if (typingIndex < text.length) {
-	htmlElement.innerHTML += text.charAt(typingIndex);
-	typingIndex++;
-	var t = setTimeout( 'continueTyping', 100); //100ms between each 'keystroke'
-}
-function continueTyping() {
-	type(text, htmlElement, typingIndex);
-}
-// The time taken for each character here is 100ms. You can change it if you want.
-}
-
-*/
-
 function loadLanding() {
 	main.innerHTML = joke;
 	main.className = 'flex-vertical-centered';
 
-	var tellMeJokeButton = document.getElementById('yes');
-	tellMeJokeButton.addEventListener('click', tellMeJoke);
-	var noJokeButton = document.getElementById('no');
-	noJokeButton.addEventListener('click', noJoke);
 
-	runJoke();
-}
-
-function loadHome(e) {
-	main.innerHTML = jokeLoaded;
-	main.className = 'flex-vertical-centered';
-	click(e.target);
-
-	var tellMeJokeButton = document.getElementById('yes');
-	tellMeJokeButton.addEventListener('click', tellMeJoke);
-	var noJokeButton = document.getElementById('no');
-	noJokeButton.addEventListener('click', noJoke);
-
-	var punchlineButton = document.getElementById('punchlineButton');
-	punchlineButton.addEventListener('click', deliverPunchline);
-}
-
-function loadAbout(e) {
-	main.innerHTML = about;
-	main.className = 'flex-vertical-centered';
-	click(e.target);
-}
-
-function loadResume(e) {
-	main.innerHTML = resume;
-	main.className = '';
-	click(e.target);
-}
-
-function loadPortfolio(e) {
-	main.innerHTML = portfolio;
-	main.className = 'flex-vertical-centered';
-	click(e.target);
-}
-
-function loadContact(e) {
-	main.innerHTML = contact;
-	main.className = 'flex-vertical-centered';
-	click(e.target);
 }
 
 
