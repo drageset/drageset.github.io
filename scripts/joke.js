@@ -28,7 +28,7 @@ tellMeJokeButton.addEventListener('click', tellMeJoke);
 var noJokeButton = document.getElementById('no');
 noJokeButton.addEventListener('click', noJoke);
 
-const jokeText = ["Hi there!","Wanna hear a joke?","Two drums and a cymbal fell off a cliff...","Well, then the joke's on you! (sorry, not sorry)"];
+const jokeText = ["Hi!","Wanna hear a joke?","Two drums and a cymbal fell off a cliff...","Well, then the joke's on you! (sorry, not sorry)"];
 
 runJoke();
 
