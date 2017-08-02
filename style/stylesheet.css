@@ -19,14 +19,19 @@ header {
 	padding: 20px;
 	height: 80px;
 	background-color: #F8F8F8;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+			-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 }
 
 hr {
 	width: 90%;
 	margin-bottom: 2em;
+}
+
+img {
+	max-height: 50px;
+	max-width: 50px;
 }
 
 #hamburger-nav {
@@ -40,7 +45,7 @@ hr {
 }
 
 nav div {
-	margin: 10px;
+	margin: 10px 10px 10px 10px;
 }
 
 nav a:link, nav a:visited {
@@ -216,13 +221,38 @@ main div {
 	display: none;
 }
 
+#ham-wrapper {
+	height: 120px;
+	width: 120px;
+	margin-right: -20;
+}
 
-@media only screen and (min-width: 840px) {
+#ham-wrapper:hover {
+	background-color: #e6e6e6;
+	cursor: pointer;
+}
+
+#icon-wrapper a {
+	display: none;
+}
+
+@media only screen and (min-width: 530px) {
+	#icon-wrapper a {
+		display: block;
+		margin-right: auto;
+		width: 50px;
+		margin: 0 30px 0 0;
+	}
+}
+
+
+@media only screen and (min-width: 900px) {
 	#desktop-nav, #desktop-nav * {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
 	}
+
 	#desktop-nav {
 		padding: 5px;
 	}
@@ -235,6 +265,10 @@ main div {
 		padding: 0;
 	}
 
+	#icon-wrapper a {
+		display: block;
+	}
+
 	main {
 		padding: 20px 50px 50px 50px;
 	}
@@ -243,8 +277,26 @@ main div {
 		padding: 1px 30px 1px 30px;
 	}
 
+	img {
+		margin: 0 15px 0 15px;
+	}
+
 	#joke-wrapper {
 		min-width: 470px;
 		min-height: 300px;
+	}
+
+	header {
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+	}
+
+	#ham-wrapper {
+		height: 120px;
+		width: 0;
+		top: -20px;
+		right: -20px;
+		margin: 0;
 	}
 }
