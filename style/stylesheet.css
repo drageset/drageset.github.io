@@ -151,12 +151,13 @@ footer {
 main .square-button {
 	margin: 0 10px 0 10px;
 	border: 1px solid #F8F8F8;
+	background-color: none;
 }
 
 main .square-button:hover {
 	background-color: #F8F8F8;
 	color: #313131;
-	width: 85px;
+	width: 80px;
 	height: 49px;
 	-webkit-box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
 	        box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
@@ -240,5 +241,10 @@ main div {
 
 	.expanding {
 		padding: 1px 30px 1px 30px;
+	}
+
+	#joke-wrapper {
+		min-width: 470px;
+		min-height: 300px;
 	}
 }
