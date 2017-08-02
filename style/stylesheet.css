@@ -19,7 +19,9 @@ header {
 	padding: 20px;
 	height: 80px;
 	background-color: #F8F8F8;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 hr {
@@ -42,7 +44,8 @@ nav div {
 }
 
 nav a:link, nav a:visited {
-	text-decoration-line: none;
+	-webkit-text-decoration-line: none;
+	        text-decoration-line: none;
 	color: #313131;
 }
 
@@ -68,7 +71,8 @@ main.bg {
 .text-wrapper {
 
 	max-width: 300px;
-	align-self: flex-start;
+	-ms-flex-item-align: start;
+	    align-self: flex-start;
 }
 
 .text-wrapper .square-button {
@@ -80,16 +84,25 @@ footer {
 }
 
 *[class*="flex"] {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 *[class*="-vertical"] {
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 *[class*="-centered"] {
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 *[class*="button"]:hover {
@@ -102,6 +115,7 @@ footer {
 }
 
 .square-button, .mobile-nav-button {
+	-webkit-transition: width 0.1s, height 0.1s, opacity 0.2s;
 	transition: width 0.1s, height 0.1s, opacity 0.2s;
 	height: 49px;
 	border: 1px solid #313131;
@@ -120,7 +134,8 @@ footer {
 .square-button:hover, .mobile-nav-button:hover {
 	background-color: #313131;
 	color: #F8F8F8;
-	box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
+	-webkit-box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
+	        box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
 }
 
 .square-button:hover {
@@ -129,7 +144,8 @@ footer {
 }
 
 .box-shadow {
-	box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
+	-webkit-box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
+	        box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
 }
 
 main .square-button {
@@ -142,14 +158,16 @@ main .square-button:hover {
 	color: #313131;
 	width: 85px;
 	height: 49px;
-	box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
+	-webkit-box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
+	        box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
 	cursor: pointer; cursor: hand; 
 }
 
 .clicked {
 	background-color: #313131;
 	color: #F8F8F8;
-	box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
+	-webkit-box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
+	        box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
 }
 
 .hidden, .hidden * {
@@ -165,6 +183,7 @@ main div {
 }
 
 .expanding {
+	-webkit-transition: height 0.3s;
 	transition: height 0.3s;
 	cursor: pointer; cursor: hand; 
 }
@@ -199,6 +218,8 @@ main div {
 
 @media only screen and (min-width: 840px) {
 	#desktop-nav, #desktop-nav * {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 	#desktop-nav {
