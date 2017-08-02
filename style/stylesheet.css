@@ -7,6 +7,7 @@
 body {
 	margin: 0;
 	font-family: 'Josefin Sans', sans-serif;
+	width: 100%;
 	min-width: 310px;
 }
 
@@ -23,6 +24,7 @@ header {
 
 hr {
 	width: 90%;
+	margin-bottom: 2em;
 }
 
 #hamburger-nav {
@@ -44,7 +46,7 @@ nav a:link, nav a:visited {
 	color: #313131;
 }
 
-a[class*="button"]:link, a[class*="button"]:visited {
+a[class*="button"]:link, a[class*="button"]:visited, #landing-link:link, #landing-link:visited {
 	text-decoration: none;
 	color: #F8F8F8;
 }
@@ -56,8 +58,21 @@ main {
 	color: #F8F8F8;
 }
 
+main.bg {
+	background: url("bg.jpg");
+	background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+}
+
 .text-wrapper {
-	margin: 0 10px 0 10px;
+
+	max-width: 300px;
+	align-self: flex-start;
+}
+
+.text-wrapper .square-button {
+	margin: 0 0 30px 0;
 }
 
 footer {
@@ -144,11 +159,18 @@ main .square-button:hover {
 	padding: 0;
 }
 
-.expanding {
-	transition: height 0.3s;
+main div {
 	background-color: #464646;
 	padding: 1px 20px 1px 20px;
+}
+
+.expanding {
+	transition: height 0.3s;
 	cursor: pointer; cursor: hand; 
+}
+
+.expanding:hover {
+	background-color: #404040;
 }
 
 #olve {
@@ -175,7 +197,7 @@ main .square-button:hover {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 840px) {
 	#desktop-nav, #desktop-nav * {
 		display: flex;
 	}

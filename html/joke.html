@@ -1,0 +1,65 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Hi there!</title>
+	<link rel="stylesheet" type="text/css" href="../style/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="../style/hamburger.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu+Mono|Luckiest+Guy" rel="stylesheet">
+</head>
+<body>
+	<header class="flex">
+		<div id="name" class="flex-centered">
+			<div id="olve" class="flex-vertical-centered">
+				<span>O L</span>
+				<span>V E</span>
+			</div>
+
+			<h1 id="drageset">drageset</h1>
+		</div>
+		<div class="flex-centered">
+			<div id="nav-icon3">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav id="desktop-nav" class="flex-centered">
+				<a class="flex-centered" href="../index.html"><div id="home" class="square-button flex-centered">home</div></a>
+				<a class="flex-centered" href="about.html"><div id="about" class="square-button flex-centered">about</div></a>
+				<a class="flex-centered" href="resume.html"><div id="resume" class="square-button flex-centered">resume</div></a>
+				<a class="flex-centered" href="portfolio.html"><div id="portfolio" class="square-button flex-centered">portfolio</div></a>
+				<a class="flex-centered" href="contact.html"><div id="contact" class="square-button flex-centered">contact</div></a>
+				<a class="flex-centered" href="#"><div id="joke-page-button" class="square-button flex-centered clicked">joke</div></a>
+			</nav>
+		</div>
+	</header>
+	<nav id="hamburger-nav" class="hidden flex-vertical-centered">
+		<a class="flex-centered" href="../index.html"><div class="mobile-nav-button flex-centered">home</div></a>
+		<a class="flex-centered" href="about.html"><div class="mobile-nav-button flex-centered">about</div></a>
+		<a class="flex-centered" href="resume.html"><div class="mobile-nav-button flex-centered">resume</div></a>
+		<a class="flex-centered" href="portfolio.html"><div class="mobile-nav-button flex-centered">portfolio</div></a>
+		<a class="flex-centered" href="contact.html"><div class="mobile-nav-button flex-centered">contact</div></a>
+		<a class="flex-centered" href="#"><div class="mobile-nav-button flex-centered clicked">joke</div></a>
+	</nav>
+	<main id="main" class="flex-vertical-centered bg">
+		<div id="joke" class="flex-vertical-centered">
+			<p class="typing typing-0"></p>
+			<p class="typing typing-1"></p>
+			<br>
+			<div id="alternatives" class="flex-centered">
+				<div id="yes" class="square-button flex-centered glowing hidden">Sure!</div>
+				<div id="no" class="square-button flex-centered glowing hidden">Nah</div>
+			</div>
+			<br>
+			<p id="jokeOrNoJoke" class="hidden typing typing-2"></p>
+			<p id="jokePunchline" class="hidden"><span>Ba</span><span>dum</span> <span>tssssh!</span></p>
+		</div>
+	</main>
+	<footer class="flex-vertical-centered">
+		This is a footer
+	</footer>
+	<script src="../scripts/script.js"></script>
+	<script src="../scripts/joke.js"></script>
+</body>
+</html>
