@@ -61,7 +61,7 @@ a[class*="button"]:link, a[class*="button"]:visited, #landing-link:link, #landin
 
 main {
 	padding: 15px 30px 30px 30px;
-	min-height: 80%;
+	min-height: 75%;
 	background-color: #313131;
 	color: #F8F8F8;
 }
