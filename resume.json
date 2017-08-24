@@ -1,14 +1,29 @@
 {
 	"@context":{
-		
+		"name":"http://schema.org/name",
+		"email":"http://schema.org/email",
+		"website":{
+			"@id":"http://schema.org/url",
+			"@type":"@id"
+		},
+		"image":{
+			"@id":"http://schema.org/image",
+			"@type":"@id"
+		},
+		"comment":"http://www.w3.org/2000/01/rdf-schema#comment",
+		"label":"http://www.w3.org/2000/01/rdf-schema#label",
+		"personalProfile":"http://xmlns.com/foaf/0.1/PersonalProfileDocument"
 	},
-	"@type":"Resume",
+	"@type":"personalProfile",
 	"@id":"https://drageset.github.io/resume.json",
-	"basic info":{
+	"comment":"A json-ld resume for Olve Drageset",
+	"label":"Resume: Olve Drageset",
+	"basicInfo":{
 		"name":"Olve Drageset",
 		"label":"Cognitive Scientist",
 		"email":"olve.drageset@gmail.com",
-		"website":"https://drageset.github.io"
+		"website":"https://drageset.github.io",
+		"image":""
 	},
 	"profiles":{
 		"linkedIn":"https://www.linkedin.com/in/olvedrageset/",
