@@ -1,107 +1,158 @@
 {
-	"@context":{
-		"name":"http://schema.org/name",
-		"email":"http://schema.org/email",
-		"website":{
-			"@id":"http://schema.org/url",
-			"@type":"@id"
-		},
-		"image":{
-			"@id":"http://schema.org/image",
-			"@type":"@id"
-		},
-		"comment":"http://www.w3.org/2000/01/rdf-schema#comment",
-		"label":"http://www.w3.org/2000/01/rdf-schema#label",
-		"personalProfile":"http://xmlns.com/foaf/0.1/PersonalProfileDocument"
-	},
-	"@type":"personalProfile",
-	"@id":"https://drageset.github.io/resume.json",
-	"comment":"A json-ld resume for Olve Drageset",
-	"label":"Resume: Olve Drageset",
-	"basicInfo":{
-		"name":"Olve Drageset",
-		"label":"Cognitive Scientist",
-		"email":"olve.drageset@gmail.com",
-		"website":"https://drageset.github.io",
-		"image":""
-	},
-	"profiles":{
-		"linkedIn":"https://www.linkedin.com/in/olvedrageset/",
-		"GitHub":"https://github.com/drageset",
-	},
-	"work":[{"company":"University Of Bergen",
-		"website":"http://www.uib.no/en",
-		"position":"Teaching Assistant, Client Programming",
-		"startDate":"2017-01-01",
-		"endDate":"2017-06-01",
-		"summary":"As a teaching assistant I was responsible for planning and leading programming labs for the subject INFO134 Client Programming. In the labs I taught HTML5/CSS3, JavaScript and MongoDB, and helped students with practical assignments. I also provided the students with written feedback on practical assignments, and produced exercises, mini lectures and code examples."},
-		{"company":"Norwegian Armed Forces",
-		"website":"https://forsvaret.no/en",
-		"position":"Soldier, Private",
-		"startDate":"2013-08-01",
-		"endDate":"2014-08-01",
-		"summary":"In my time with the Heavy Combat Engineers I took on tasks in operating and maintaining a selection of encrypted radio communications systems, security tasks, and observation. Our team completed prolonged missions in small teams with and without NCO leadership. I also had the honor of being our platoon's elected representative (Troppstillitsvalgt)."},
-		{"company":"Hoeg Café",
-		"website":"",
-		"position":"Co-Founder, Co-Manager",
-		"startDate":"2012-10-01",
-		"endDate":"2013-05-01",
-		"summary":"Hoeg Café was a nonprofit café for students and visitors at my then current high school, UWC RCN. It was founded as a response to our old café closing down. My experience was diverse, from economy and HR to waitering and cooking."}],
-	"education":[{"institution":"Maastricht University, Department of Knowledge Engineering and Data Science",
-		"area":"Artificial Intelligence",
-		"studyType":"Premaster Programme",
-		"startDate":"2017-09-01",
-		"endDate":"2018-01-30",
-		"courses":["Machine Learning", 
-		"Parallel Programming",
-		"Graph Theory",
-		"Game Theory",
-		"Semantic Web",
-		"Probability and Statistics",
-		"Linear Algebra",
-		"Project 2-1"],
-		"description":"A single semester preparatory programme of bachelor level subjects selected to bridge the mathematical gap between my bachelor in Cognitive Science and the Master in Artificial Intelligence, and to give me time for self study of Calculus"},
-		{"institution":"University of Bergen",
-		"area":"Cognitive Science, Specialised in Information Science",
-		"studyType":"Bachelor's Programme",
-		"website":"http://www.uib.no/studieprogram/BASV-KOGNI",
-		"startDate":"2014-08-22",
-		"endDate":"2017-06-15",
-		"courses":["INFO232 Advanced Programming", 
-		"INFO216 Advanced Modelling",
-		"INFO212 Information System Development",
-		"INFO282 Knowledge Representation and Reasoning",
-		"INFO207 Social Network Theory",
-		"INF227 Mathematical Logic",
-		"INFO233 Logic Programming",
-		"INFO116 Semantic Technologies",
-		"INFO125 Data Management",
-		"INFO110 Information Systems",
-		"PSYK120 Biological and Cognitive Psychology",
-		"LOG111 Deduction, Model Theory and Meta Logic",
-		"LOG110 Introduction to Formal Logic",
-		"DASPSTAT Statistics for Cognitive Sciences",
-		"INF100 Introduction to Object Oriented Programming",
-		"LING122 Psycholinguistics, language and cognition",
-		"INFO102 Discrete Mathematics for Computing",
-		"FIL105 Introduction to Philosophy of Mind",
-		"KOGVIT101 Introduction to Cognitive Science",
-		"EXFAC00SK Language and Communication",
-		"EXPHIL-PS Examen Philosophicum"],
-		"description":"The UiB bachelor's programme in cognitive science with specialisation in information science borrows subjects from several faculties and is aimed at giving cognitive scientists the tools they need to work with AI and software development"},
-		{"institution":"United World College Red Cross Nordic",
-		"website":"https://uwcrcn.no/",
-		"area":"High School",
-		"studyType":"IB diploma programme",
-		"startDate":"2011-08-22",
-		"endDate":"2013-05-23",
-		"courses":["Visual Arts HL", 
-		"Philosophy HL",
-		"Norwegian A1 Literature HL",
-		"English A1 Language and Literature SL",
-		"Physics SL",
-		"Math Studies SL"],
-		"description":"UWC RCN is a diverse international boarding school with students from over 90 nations. The IB Diploma Programme is an internationally acknowledged standard for high school education"},
-		]
-	}
+  "@context":{
+    "name":"http://schema.org/name",
+    "email":"http://schema.org/email",
+    "website":{
+      "@id":"http://schema.org/url",
+      "@type":"@id"
+    },
+    "image":{
+      "@id":"http://schema.org/image",
+      "@type":"@id"
+    },
+    "label":"http://www.w3.org/2000/01/rdf-schema#label",
+    "comment":"http://www.w3.org/2000/01/rdf-schema#comment",
+    "description":"http://schema.org/description",
+    "summary":"http://schema.org/description",
+    "PersonalProfile":"http://xmlns.com/foaf/0.1/PersonalProfileDocument",
+    "startDate":{
+      "@type":"xsd:date"
+    },
+    "endDate":{
+      "@type":"xsd:date"
+    }
+  },
+  "@type":"personalProfile",
+  "@id":"https://drageset.github.io/resume.json",
+  "comment":"A json-ld resume for Olve Drageset",
+  "label":"Resume: Olve Drageset",
+  "basicInfo":{
+    "name":"Olve Drageset",
+    "label":"Cognitive Scientist",
+    "email":"olve.drageset@gmail.com",
+    "website":"https://drageset.github.io",
+    "image":"",
+    "summary":" am an aspiring AI programmer with a degree in cognitive science and information science. I have experience teaching web development to undergraduate students, and enjoy working with semantic technologies and ontology building. On the side I like to build 2D games, both with friends and alone."
+  },
+  "profiles":[
+    {
+      "network":"GitHub",
+      "username":"drageset",
+      "url":"https://github.com/drageset"
+    },
+    {
+      "network":"linkedIn",
+      "username":"Olve Drageset",
+      "url":"https://www.linkedin.com/in/olvedrageset/"
+    }
+  ],
+  "work":[
+    {
+      "company":{
+        "name":"University Of Bergen",
+        "website":"http://www.uib.no/en"
+      },
+      "position":"Teaching Assistant, Client Programming",
+      "startDate":"2017-01-01",
+      "endDate":"2017-06-01",
+      "summary":"As a teaching assistant I was responsible for planning and leading programming labs for the subject INFO134 Client Programming. In the labs I taught HTML5/CSS3, JavaScript and MongoDB, and helped students with practical assignments. I also provided the students with written feedback on practical assignments, and produced exercises, mini lectures and code examples."
+    },
+    {
+      "company":{
+        "name":"Norwegian Armed Forces",
+        "website":"https://forsvaret.no/en"
+      },
+      "position":"Soldier, Private",
+      "startDate":"2013-08-01",
+      "endDate":"2014-08-01",
+      "summary":"In my time with the Heavy Combat Engineers I took on tasks in operating and maintaining a selection of encrypted radio communications systems, security tasks, and observation. Our team completed prolonged missions in small teams with and without NCO leadership. I also had the honor of being our platoon's elected representative (Troppstillitsvalgt)."
+    },
+    {
+      "company":{
+        "name":"Hoeg Café",
+        "website":""
+      },
+      "position":"Co-Founder, Co-Manager",
+      "startDate":"2012-10-01",
+      "endDate":"2013-05-01",
+      "summary":"Hoeg Café was a nonprofit café for students and visitors at my then current high school, UWC RCN. It was founded as a response to our old café closing down. My experience was diverse, from economy and HR to waitering and cooking."
+    }
+  ],
+  "education":[
+    {
+      "institution":{
+        "name":"Maastricht University",
+        "website":"https://www.maastrichtuniversity.nl"
+      },
+      "area":"Artificial Intelligence",
+      "studyType":"Premaster Programme",
+      "startDate":"2017-09-01",
+      "endDate":"2018-01-30",
+      "courses":[
+        "Machine Learning",
+        "Parallel Programming",
+        "Graph Theory",
+        "Game Theory",
+        "Semantic Web",
+        "Probability and Statistics",
+        "Linear Algebra",
+        "Project 2-1"
+      ],
+      "description":"A single semester preparatory programme of bachelor level subjects selected to bridge the mathematical gap between my bachelor in Cognitive Science and the Master in Artificial Intelligence, and to give me time for self study of Calculus"
+    },
+    {
+      "institution":{
+        "name":"University of Bergen",
+        "website":"https://uib.no"
+      },
+      "area":"Cognitive Science, Specialised in Information Science",
+      "studyType":"Bachelor's Programme",
+      "website":"http://www.uib.no/studieprogram/BASV-KOGNI",
+      "startDate":"2014-08-22",
+      "endDate":"2017-06-15",
+      "courses":[
+        "INFO232 Advanced Programming",
+        "INFO216 Advanced Modelling",
+        "INFO212 Information System Development",
+        "INFO282 Knowledge Representation and Reasoning",
+        "INFO207 Social Network Theory",
+        "INF227 Mathematical Logic",
+        "INFO233 Logic Programming",
+        "INFO116 Semantic Technologies",
+        "INFO125 Data Management",
+        "INFO110 Information Systems",
+        "PSYK120 Biological and Cognitive Psychology",
+        "LOG111 Deduction, Model Theory and Meta Logic",
+        "LOG110 Introduction to Formal Logic",
+        "DASPSTAT Statistics for Cognitive Sciences",
+        "INF100 Introduction to Object Oriented Programming",
+        "LING122 Psycholinguistics, language and cognition",
+        "INFO102 Discrete Mathematics for Computing",
+        "FIL105 Introduction to Philosophy of Mind",
+        "KOGVIT101 Introduction to Cognitive Science",
+        "EXFAC00SK Language and Communication",
+        "EXPHIL-PS Examen Philosophicum"
+      ],
+      "description":"The UiB bachelor's programme in cognitive science with specialisation in information science borrows subjects from several faculties and is aimed at giving cognitive scientists the tools they need to work with AI and software development"
+    },
+    {
+      "institution":{
+        "name":"United World College Red Cross Nordic",
+        "website":"https://uwcrcn.no/"
+      },
+      "area":"High School",
+      "studyType":"IB diploma programme",
+      "startDate":"2011-08-22",
+      "endDate":"2013-05-23",
+      "courses":[
+        "Visual Arts HL",
+        "Philosophy HL",
+        "Norwegian A1 Literature HL",
+        "English A1 Language and Literature SL",
+        "Physics SL",
+        "Math Studies SL"
+      ],
+      "description":"UWC RCN is a diverse international boarding school with students from over 90 nations. The IB Diploma Programme is an internationally acknowledged standard for high school education"
+    }
+  ]
 }
