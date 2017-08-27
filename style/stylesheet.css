@@ -184,6 +184,10 @@ main .square-button:hover {
 	padding: 0;
 }
 
+.hidden * {
+	display: none;
+}
+
 main div {
 	background-color: #464646;
 	padding: 1px 20px 1px 20px;
