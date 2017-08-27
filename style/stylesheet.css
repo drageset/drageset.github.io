@@ -241,7 +241,7 @@ main div {
 	display: none;
 }
 
-span.skill-descriptor {
+span.skill-descriptor, .description {
 	color: #d6d6d6;
 }
 

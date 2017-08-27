@@ -24,9 +24,12 @@ for (var i = 0; i < expandingElements.length; i++) {
 		console.log(e.target);
 		var expandingElement = findExpandingParent(e.target);
 		console.log(expandingElement);
-		expandingElement.querySelector('.description').classList.toggle('hidden');
+		var descriptions = expandingElement.querySelectorAll('.description');
+		for (var j = 0; j < descriptions.length; j++) {
+			descriptions[j].classList.toggle('hidden');
+		}
 	}
-	
+
 	if (descriptionElement) {
 		console.log(descriptionElement);
 		expandingElement.addEventListener('click',clickFunc);
