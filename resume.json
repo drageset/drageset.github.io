@@ -1,7 +1,11 @@
 {
   "@context":{
+    "type":"@type",
+    "id":"@id",
     "name":"http://schema.org/name",
     "email":"http://schema.org/email",
+    "OnlineAccount":"http://xmlns.com/foaf/0.1/OnlineAccount",
+    "username":"http://xmlns.com/foaf/0.1/accountName",
     "website":{
       "@id":"http://schema.org/url",
       "@type":"@id"
@@ -22,8 +26,8 @@
       "@type":"xsd:date"
     }
   },
-  "@type":"personalProfile",
-  "@id":"https://drageset.github.io/resume.json",
+  "type":"PersonalProfile",
+  "id":"https://drageset.github.io/resume.json",
   "comment":"A json-ld resume for Olve Drageset",
   "label":"Resume: Olve Drageset",
   "basicInfo":{
@@ -36,17 +40,19 @@
   },
   "profiles":[
     {
+      "type":"OnlineAccount",
       "network":"GitHub",
       "username":"drageset",
       "url":"https://github.com/drageset"
     },
     {
+      "type":"OnlineAccount",
       "network":"linkedIn",
       "username":"Olve Drageset",
       "url":"https://www.linkedin.com/in/olvedrageset/"
     }
   ],
-  "work":[
+  "workExperience":[
     {
       "company":{
         "name":"University Of Bergen",
