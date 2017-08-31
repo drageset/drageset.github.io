@@ -10,6 +10,7 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 	width: 100%;
 	min-width: 310px;
+	background-color: #313131;
 }
 
 a:link, a:visited {
@@ -62,8 +63,8 @@ a[class*="button"]:link, a[class*="button"]:visited, #landing-link:link, #landin
 
 main {
 	padding: 15px 30px 30px 30px;
+	margin: 0 0 0 0;
 	min-height: 75%;
-	background-color: #313131;
 	color: #F8F8F8;
 }
 
@@ -75,14 +76,14 @@ main.bg {
 }
 
 .text-wrapper {
-
-	max-width: 300px;
+	margin: 0 0 15px 0;
+	max-width: 400px;
 	-ms-flex-item-align: start;
 	    align-self: flex-start;
 }
 
-.text-wrapper .square-button {
-	margin: 0 0 30px 0;
+.content-wrapper {
+	padding: 1px 15px 1px 15px;
 }
 
 footer {
@@ -130,6 +131,7 @@ footer {
 
 .square-button {
 	width: 80px;
+	margin: 0 10px 0 10px;
 }
 
 
@@ -155,7 +157,8 @@ footer {
 }
 
 main .square-button {
-	margin: 0 10px 20px 10px;
+	margin: 0 20px 20px 0;
+	padding: 0 10px 0 10px;
 	border: 1px solid #F8F8F8;
 	background-color: none;
 }
@@ -190,7 +193,6 @@ main .square-button:hover {
 
 main div {
 	background-color: #464646;
-	padding: 1px 20px 1px 20px;
 }
 
 .expanding {
@@ -245,17 +247,28 @@ span.skill-descriptor, .description {
 	color: #d6d6d6;
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 528px) {
 	#icon-wrapper a {
 		display: block;
 		margin-right: auto;
 		width: 50px;
 		margin: 0 30px 0 0;
 	}
+
+	.text-wrapper {
+		margin: 0 0 30px 0;
+		max-width: 460px;
+		-ms-flex-item-align: start;
+		    align-self: flex-start;
+	}
+
+	.content-wrapper {
+		padding: 1px 30px 1px 30px;
+	}
 }
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 930px) {
 	#desktop-nav, #desktop-nav * {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -282,9 +295,6 @@ span.skill-descriptor, .description {
 		padding: 20px 50px 50px 50px;
 	}
 
-	.expanding {
-		padding: 1px 30px 1px 30px;
-	}
 
 	img {
 		margin: 0 15px 0 15px;
