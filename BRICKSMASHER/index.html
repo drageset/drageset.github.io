@@ -1,25 +1,58 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Breakout Clone</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
-    <script src="Build/UnityLoader.js"></script>
+<html  lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>Unity | BRICK SMASHER</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../src/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../style/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="../style/hamburger.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu+Mono|Luckiest+Guy" rel="stylesheet">
+	<script src="../BRICKSMASHER/TemplateData/UnityProgress.js"></script>  
+	<script src="../BRICKSMASHER/Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL build.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "../BRICKSMASHER/Build/WebGL build.json", {onProgress: UnityProgress});
     </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">Breakout Clone</div>
-      </div>
-    </div>
-  </body>
+</head>
+<body>
+	<header class="flex">
+		<div id="name" class="flex-centered">
+			<div id="olve" class="flex-vertical-centered">
+				<span>O L</span>
+				<span>V E</span>
+			</div>
+			<h1 id="drageset">drageset</h1>
+			<nav id="desktop-nav" class="flex-centered">
+				<a class="flex-centered" href="../index.html"><div  class="square-button flex-centered">home</div></a>
+				<a class="flex-centered" href="../html/about.html"><div  class="square-button flex-centered">about</div></a>
+				<a class="flex-centered" href="../html/resume.html"><div  class="square-button flex-centered">resume</div></a>
+				<a class="flex-centered" href="../html/portfolio.html"><div class="square-button flex-centered">portfolio</div></a>
+				<a class="flex-centered" href="../html/contact.html"><div class="square-button flex-centered">contact</div></a>
+			</nav>
+		</div>
+		<div id="icon-wrapper" class="flex-centered">
+			<a href="https://github.com/drageset" target="profile"><img src="../src/github.png" title="GitHub"></a>
+			<a href="https://www.linkedin.com/in/olvedrageset/" target="linkedin"><img src="../src/in.png" title="Linkedin"></a>
+			<div id="ham-wrapper" class="flex-centered">
+				<div id="nav-icon3">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav id="hamburger-nav" class="hidden flex-vertical-centered">
+		<a class="flex-centered" href="../index.html"><div class="mobile-nav-button flex-centered">home</div></a>
+		<a class="flex-centered" href="../html/about.html"><div class="mobile-nav-button flex-centered">about</div></a>
+		<a class="flex-centered" href="../html/resume.html"><div class="mobile-nav-button flex-centered">resume</div></a>
+		<a class="flex-centered" href="../html/portfolio.html"><div class="mobile-nav-button flex-centered">portfolio</div></a>
+		<a class="flex-centered" href="../html/contact.html"><div class="mobile-nav-button flex-centered">contact</div></a>
+	</nav>
+	<main id="main" class="flex-vertical-centered">
+		<div id="gameContainer" style="width: 960px; height: 600px"></div>
+	</main>
+	<script src="../scripts/script.js"></script>
+</body>
 </html>
