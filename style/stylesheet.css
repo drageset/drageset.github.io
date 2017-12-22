@@ -20,7 +20,7 @@ a:link, a:visited {
 header {
 	padding: 20px;
 	height: 80px;
-	background-color: #6E6E6E;
+	background-color: #78787A;
 			-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
 		        justify-content: space-between;
@@ -39,7 +39,7 @@ img {
 #hamburger-nav {
 	top: 80px;
 	right: 0;
-	background-color: #6E6E6E;
+	background-color: #78787A;
 }
 
 #hamburger-nav a {
