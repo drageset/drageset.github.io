@@ -1,6 +1,6 @@
 :root {
 	--main-color: #313131;
-	--secondary-color: #F8F8F8;
+	--secondary-color: #6E6E6E;
 	--tertiary-color: #B5B3B1;
 }
 
@@ -14,7 +14,7 @@ body {
 }
 
 a:link, a:visited {
-	color: #e8c114;
+	color: #b9ce00;
 }
 
 header {
@@ -39,7 +39,7 @@ img {
 #hamburger-nav {
 	top: 80px;
 	right: 0;
-	background-color: #F8F8F8;
+	background-color: #6E6E6E;
 }
 
 #hamburger-nav a {
@@ -65,7 +65,7 @@ main {
 	padding: 15px 30px 30px 30px;
 	margin: 0 0 0 0;
 	min-height: 75%;
-	color: #F8F8F8;
+	color: #dadada;
 }
 
 main.bg {
@@ -77,6 +77,10 @@ main.bg {
 
 .highlighted-text {
 	color: #e8c114;
+}
+
+.keywords{
+	color: #b29361;
 }
 
 .text-wrapper {
@@ -223,6 +227,7 @@ main div {
 
 #drageset {
 	margin: 10px;
+	color: #313131;
 }
 
 #jokePunchline {
