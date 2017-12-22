@@ -88,6 +88,9 @@ main.bg {
 
 .content-wrapper {
 	padding: 10px 15px 1px 15px;
+	-webkit-box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
+	        box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
+	border-radius: 0px;
 }
 
 footer {
