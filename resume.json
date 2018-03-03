@@ -91,6 +91,22 @@
         "website":"https://www.maastrichtuniversity.nl"
       },
       "area":"Artificial Intelligence",
+      "studyType":"Master of Science",
+      "startDate":"2018-02-01",
+      "endDate":"2020-01-30",
+      "courses":[
+        "Autonomous Robotic Systems",
+        "Algorithms for Big Data",
+        "Research Project: Coevolution of maze solvers and mazes",
+      ],
+      "description":"A two year masters programme in AI, with a dash of Data Science"
+    },
+    {
+      "institution":{
+        "name":"Maastricht University",
+        "website":"https://www.maastrichtuniversity.nl"
+      },
+      "area":"Artificial Intelligence",
       "studyType":"Premaster Programme",
       "startDate":"2017-09-01",
       "endDate":"2018-01-30",

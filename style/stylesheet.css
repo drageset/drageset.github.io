@@ -21,9 +21,7 @@ header {
 	padding: 20px;
 	height: 80px;
 	background-color: #78787A;
-			-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
+		 justify-content: space-between;
 }
 
 hr {
@@ -86,14 +84,12 @@ main.bg {
 .text-wrapper {
 	margin: 0 0 10px 0;
 	max-width: 400px;
-	-ms-flex-item-align: start;
-	    align-self: flex-start;
+	align-self: flex-start;
 }
 
 .content-wrapper {
 	padding: 10px 15px 1px 15px;
-	-webkit-box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
-	        box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
+	box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
 	border-radius: 0px;
 }
 
@@ -102,25 +98,16 @@ footer {
 }
 
 *[class*="flex"] {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 }
 
 *[class*="-vertical"] {
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	flex-direction: column;
 }
 
 *[class*="-centered"] {
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	align-items: center;
+	justify-content: center;
 }
 
 *[class*="button"]:hover {
@@ -133,7 +120,6 @@ footer {
 }
 
 .square-button, .mobile-nav-button {
-	-webkit-transition: width 0.1s, height 0.1s, opacity 0.2s;
 	transition: width 0.1s, height 0.1s, opacity 0.2s;
 	height: 49px;
 	border: 1px solid #313131;
@@ -153,8 +139,7 @@ footer {
 .square-button:hover, .mobile-nav-button:hover {
 	background-color: #313131;
 	color: #F8F8F8;
-	-webkit-box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
-	        box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
+	box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
 }
 
 .square-button:hover {
@@ -163,8 +148,7 @@ footer {
 }
 
 .box-shadow {
-	-webkit-box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
-	        box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
+	box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9);
 }
 
 main .square-button {
@@ -179,16 +163,14 @@ main .square-button:hover {
 	color: #313131;
 	width: 80px;
 	height: 49px;
-	-webkit-box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
-	        box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
+	box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
 	cursor: pointer; cursor: hand; 
 }
 
 .clicked {
 	background-color: #313131;
 	color: #8c8c8c;
-	-webkit-box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
-	        box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
+	box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
 }
 
 .hidden, .hidden * {
@@ -207,7 +189,6 @@ main div {
 }
 
 .expanding {
-	-webkit-transition: height 0.3s;
 	transition: height 0.3s;
 	cursor: pointer; cursor: hand; 
 }
@@ -270,8 +251,7 @@ span.skill-descriptor, .description {
 	.text-wrapper {
 		margin: 0 0 0 0;
 		max-width: 460px;
-		-ms-flex-item-align: start;
-		    align-self: flex-start;
+		align-self: flex-start;
 	}
 
 	.content-wrapper {
@@ -282,8 +262,6 @@ span.skill-descriptor, .description {
 
 @media only screen and (min-width: 930px) {
 	#desktop-nav, #desktop-nav * {
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
 	}
 
@@ -318,9 +296,7 @@ span.skill-descriptor, .description {
 	}
 
 	header {
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
+		justify-content: space-between;
 	}
 
 	#ham-wrapper {
