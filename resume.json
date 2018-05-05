@@ -56,7 +56,8 @@
     {
       "company":{
         "name":"University Of Bergen",
-        "website":"http://www.uib.no/en"
+        "website":"http://www.uib.no/en",
+        "type":"http://schema.org/CollegeOrUniversity"
       },
       "position":"Teaching Assistant, Client Programming",
       "startDate":"2017-01-01",
@@ -88,7 +89,8 @@
     {
       "institution":{
         "name":"Maastricht University",
-        "website":"https://www.maastrichtuniversity.nl"
+        "website":"https://www.maastrichtuniversity.nl",
+        "type":"http://schema.org/CollegeOrUniversity"
       },
       "area":"Artificial Intelligence",
       "studyType":"Master of Science",
@@ -97,14 +99,17 @@
       "courses":[
         "Autonomous Robotic Systems",
         "Algorithms for Big Data",
-        "Research Project: Coevolution of maze solvers and mazes"
+        "Research Project: Coevolution of maze solvers and mazes",
+        "Algorithms for Big Data",
+        "Autonomous Robotic Systems"
       ],
       "description":"A two year masters programme in AI, with a dash of Data Science"
     },
     {
       "institution":{
         "name":"Maastricht University",
-        "website":"https://www.maastrichtuniversity.nl"
+        "website":"https://www.maastrichtuniversity.nl",
+        "type":"http://schema.org/CollegeOrUniversity"
       },
       "area":"Artificial Intelligence",
       "studyType":"Premaster Programme",
@@ -125,7 +130,8 @@
     {
       "institution":{
         "name":"University of Bergen",
-        "website":"https://uib.no"
+        "website":"https://uib.no",
+        "type":"http://schema.org/CollegeOrUniversity"
       },
       "area":"Cognitive Science, Specialised in Information Science",
       "studyType":"Bachelor's Programme",
@@ -160,7 +166,8 @@
     {
       "institution":{
         "name":"United World College Red Cross Nordic",
-        "website":"https://uwcrcn.no/"
+        "website":"https://uwcrcn.no/",
+        "type":"http://schema.org/HighSchool"
       },
       "area":"High School",
       "studyType":"IB diploma programme",
