@@ -54,7 +54,7 @@ nav a:link, nav a:visited {
 	color: #313131;
 }
 
-#landing-link {
+#landing-link, #contact {
 	height: 80%;
 }
 
