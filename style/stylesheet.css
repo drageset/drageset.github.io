@@ -20,7 +20,7 @@ a:link, a:visited {
 header {
 	padding: 20px;
 	height: 80px;
-	background-color: #78787A;
+	background-color: #fcfcfc;
 		 justify-content: space-between;
 }
 
@@ -37,7 +37,7 @@ img {
 #hamburger-nav {
 	top: 80px;
 	right: 0;
-	background-color: #78787A;
+	background-color: #fcfcfc;
 }
 
 #hamburger-nav a {
@@ -169,7 +169,7 @@ main .square-button:hover {
 
 .clicked {
 	background-color: #313131;
-	color: #8c8c8c;
+	color: #fcfcfc;
 	box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.9);
 }
 
@@ -197,8 +197,12 @@ main div {
 	background-color: #404040;
 }
 
+.expanding:hover .description {
+	background-color: #404040;
+}
+
 #olve {
-	color: #8c8c8c;
+	color: #fcfcfc;
 	background-color: #313131;
 	width: 45px;
 	height: 45px;
