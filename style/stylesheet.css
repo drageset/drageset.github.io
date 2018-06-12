@@ -54,6 +54,10 @@ nav a:link, nav a:visited {
 	color: #313131;
 }
 
+#landing-link {
+	height: 80%;
+}
+
 a[class*="button"]:link, a[class*="button"]:visited, #landing-link:link, #landing-link:visited {
 	text-decoration: none;
 	color: #F8F8F8;
