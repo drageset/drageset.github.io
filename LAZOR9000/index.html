@@ -1,17 +1,13 @@
-<!DOCTYPE html>
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity | LAZOR9000</title>
     <link rel="shortcut icon" type="image/x-icon" href="../src/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../style/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="../style/hamburger.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Unity | LAZOR9000</title>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL build.json");
-    </script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu+Mono|Luckiest+Guy" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   </head>
   <body>
     <header class="flex">
@@ -53,6 +49,11 @@
     <main id="main" class="flex-vertical-centered">
       <div id="gameContainer" style="width: 1280px; height: 720px; margin: auto"></div>
     </main>
+
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL build.json");
+    </script>
   </body>
 
 </html>
